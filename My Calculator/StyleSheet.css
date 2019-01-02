@@ -1,0 +1,216 @@
+    * {
+        box-sizing: border-box;
+        font: bold 14px Arial, sans-serif;
+        user-select: none;
+    }
+
+    body {
+        
+        background: #cccccc;
+        background: radial-gradient(circle, #e5e5e5 20%, #8e8e8e); 
+    }
+
+    #Jumbotron { 
+        margin-top: 4%;
+        margin-left: 6%;
+        margin-right: 6%;
+        border-radius: 4px;
+        padding: 25px;
+        background-color: #111;
+    }
+
+    #Container {
+        border-radius: 4px;
+        width: 1170px; 
+        margin: 0 auto; 
+        padding: 0 15px;
+    }
+
+    #Jumbotron #Container { 
+    max-width: 88%; 
+    background-color: #222;
+    }
+
+    #Jumbotron h1 { 
+    text-align: center; 
+    color: #DDD;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: default;
+    }
+
+    marquee {
+        margin-top: 2%;
+        cursor: default;
+    }
+
+    sup {
+        vertical-align: super;
+        font-size: 10px;
+        font-weight: normal;
+    }
+
+    #Calculator{
+        width: 309px;
+        height: auto;
+        margin-top: 6%;
+        padding: 20px 20px 8px;
+        border-radius: 3px;
+        background: #5b5b5b;
+        box-shadow: 0px 4px #363636
+    }
+
+    #Screen {
+        height: 40px;
+        width: 269px;
+        align-self: center;
+        padding: 10px;
+        margin-bottom: 11px;
+        background: #794044;
+        border-radius: 3px;
+        box-shadow: inset 0px 4px #542c2f;
+        cursor: default;
+        
+        /* For Typing */
+        font-size: 16px;
+        line-height: 40px;
+        color: white;
+        text-shadow: 1px 1px 2px #cccccc;
+        text-align: right;
+        letter-spacing: 1px;
+    }
+
+    #keys, #Screen {
+        overflow: hidden;
+    }
+
+    #keys span {
+        float: left;
+        position: relative;
+        cursor: pointer;
+        width: 62px;
+        height: 36px;
+        border-radius: 3px;
+        margin: 0 7px 11px 0;
+        color: #414545;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    #keys span.Keyss {
+        background: #d0e9ff;
+        box-shadow: 0px 4px #b1dbff;
+    }
+        
+    #keys span.Operators {
+        background: #fbded9;
+        box-shadow: 0px 4px #f9cec6;
+        margin-right: 0;
+    }
+
+    #keys span#Sqrt {
+        margin-left: 7px;
+    }
+
+    #keys span#equal {
+        background: #b2f0b2;
+        box-shadow: 0px 4px #7fe67f;
+        color: #5f6342;
+    }
+
+    #Keys span.Clear {
+        background: #ff9fa8;
+        box-shadow: 0px 4px #ff7c87;
+        color: #f0f8ff;
+    }
+
+    /* Hover Effects */
+    #keys span.Keyss:hover {
+        background: #82c6ff;
+        box-shadow: 0px 4px #59a5e5;
+        color: #faeddb;
+    }
+
+    #keys span.Operators:hover {
+        background: #f49d8d;
+        box-shadow: 0px 4px #f17c67;
+        color: #f0f8ff;
+    }
+
+    #keys span#equal:hover {
+        background: #7fe67f;
+        box-shadow: 0px 4px #4cdc4c;
+        color: #faeddb;
+    }
+
+    #Keys span.Clear:hover {
+        background: #f68991;
+        box-shadow: 0px 4px #d3545d;
+        color: #f0f8ff;
+    }
+
+    /* Active Effects */
+    #keys span.Keyss:active {
+        box-shadow: 0px 0px #82c6ff;
+        top: 4px;
+    }
+
+    #keys span.Operators:active {
+        box-shadow: 0px 0px #f49d8d;
+        top: 4px;
+    }
+
+    #keys span#equal:active {
+        box-shadow: 0px 0px #717a33;
+        top: 4px;
+    }
+
+    #Keys span.Clear:active {
+        top: 4px;
+        box-shadow: 0px 0px #d3545d;
+    }
+
+    #snackbar {
+        visibility: hidden;
+        min-width: 250px; 
+        margin-left: -125px; 
+        background-color: #333; 
+        color: #fff; 
+        text-align: center;
+        align-self: center;
+        border-radius: 2px;
+        padding: 16px; 
+        position: fixed;
+        z-index: 1; 
+        left: 50%; 
+        bottom: 30px;
+    }
+
+    #snackbar.show {
+        visibility: visible;
+
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+    @-webkit-keyframes fadein {
+        from {bottom: 0; opacity: 0;} 
+        to {bottom: 30px; opacity: 1;}
+    }
+
+    @keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+    }
+
+    @-webkit-keyframes fadeout {
+        from {bottom: 30px; opacity: 1;} 
+        to {bottom: 0; opacity: 0;}
+    }
+
+    @keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+    }

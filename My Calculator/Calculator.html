@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>My Calculator</title>
+        <link href="ico.png"  rel="icon" type="image/icon"/>
+        <link href="StyleSheet.css"  rel="stylesheet" type="text/css"/>
+        <script src="JavaScript.js"></script>
+    </head>
+
+    <body id="Body" tabindex="0" onkeydown="KeyDownFunction(event)" onkeypress="KeyPressFunction(event)">
+        <center>
+            <div id="Jumbotron">
+                <div id="Container">
+                    <h1>The Calculator !</h1>
+                </div>
+            </div>
+            <div id="Calculator">
+                <div id="Screen" >0</div>
+                <div id="keys">
+                    <span onclick="Process(this)" class="Clear">C</span>
+                    <span onclick="Process(this)" class="Clear">Del</span>
+                    <span onclick="Pwr()" class="Operators">x<sup>y</sup></span>
+                    <span onclick="Process(this)" class="Operators" id="Sqrt">√</span>
+                    <span onclick="Process(this)" class="Keyss">7</span>
+                    <span onclick="Process(this)" class="Keyss">8</span>
+                    <span onclick="Process(this)" class="Keyss">9</span>
+                    <span onclick="Process(this)" class="Operators">÷</span>
+                    <span onclick="Process(this)" class="Keyss">4</span>
+                    <span onclick="Process(this)" class="Keyss">5</span>
+                    <span onclick="Process(this)" class="Keyss">6</span>
+                    <span onclick="Process(this)" class="Operators">x</span>
+                    <span onclick="Process(this)" class="Keyss">1</span>
+                    <span onclick="Process(this)" class="Keyss">2</span>
+                    <span onclick="Process(this)" class="Keyss">3</span>
+                    <span onclick="Process(this)" class="Operators">-</span>
+                    <span onclick="Process(this)" class="Keyss">0</span>
+                    <span onclick="Process(this)" class="Keyss">.</span>
+                    <span onclick="Process(this)" id="equal">=</span>
+                    <span onclick="Process(this)" class="Operators">+</span>
+                </div>
+            </div>
+            <div id="SnackBar"></div>
+        </center>
+        <marquee>awaistufail786@gmail.com</marquee>
+    </body>
+</html>
